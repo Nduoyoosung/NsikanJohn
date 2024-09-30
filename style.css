@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    background-color: black;
+    width: 10px;
+    border-left: 1px solid grey;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.width{
+    width: 80%;
+}
+
+.txt-color{
+    color: rgba(255, 196, 0, 0.904);
+}
+
+.txt{
+    color: #8d8d8d;
+}
+
+.btt{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+.nav-footer{
+    display: none;
+}
+
+button i{
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(/poppins/Poppins-Regular.ttf);
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 196, 0, 0.904);
+}
+
+header a{
+    color: white;
+    font-family: sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+header nav li{
+    list-style-type: none;
+}
+
+header nav .logo a{
+    color: rgba(255, 196, 0, 0.904);
+}
+
+header nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu ul li{
+    margin: 10px;
+}
+
+header nav .menu ul li a{
+    transition: 0.3s linear;
+}
+header nav .menu ul li a:hover{
+    color: rgba(255, 196, 0, 0.904);
+}
+
+button{
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 196, 0, 0.904);
+    color: #111;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+button:hover{
+    background-color: white;
+    transform: translateY(6px);
+}
+
+header label{
+    color: white;
+    display: none;
+}
+header input{
+    display: none;
+}
+
+
+.row-one-bg{
+    background-image: url(./assets/images/Sunrise\ of\ Meili\ Snow\ Mountain.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.row-one-bg .row-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11rem;
+    margin-bottom: 8rem;
+    font-family: sans-serif;
+}
+
+.row-one-bg .row-one div{
+    width: 48%;
+}
+
+.row-one-bg .row-one .img-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #11111194;
+}
+
+.row-one-bg .row-one .img-text .expertise{
+    position: relative;
+   width: 30%;
+   color: white;
+   background-color: #111;
+   text-align: center;
+   padding: 15px;
+}
+
+
+.row-one-bg .row-one .img-text .box1{
+    bottom: 40%;
+    left: -5%;
+}
+
+.row-one-bg .row-one .img-text .box2{
+    top: 40%;
+    right: -5%;
+}
+
+.row-one-bg .row-one .img-text .expertise h1{
+    font-size: 1.7em;
+}
+
+.row-one .img-text .expertise p{
+    color: rgba(255, 196, 0, 0.904);
+    font-size: 15px;
+}
+
+.row-one .img-text .my-photo{
+    width: 40%;
+    height: 100%;
+}
+.row-one .img-text .my-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/** row-one edits for column two **/
+.row-one .text{
+    color: white;
+}
+
+.row-one .text h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 2px 3px #111;
+}
+
+.row-one .text button{
+    margin-top: 30px;
+}
+
+/* second section */
+
+.row-two{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.row-two .width{
+    color: white;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-family: sans-serif;
+}
+
+.row-two .width h1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.row-two .width .videos-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-two .width .videos-wrap .videos{
+    width: 32%;
+    height: 13rem;
+    margin-top: 1rem;
+}
+
+/* row three */
+
+.row-three{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.row-three .width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    font-family: sans-serif;
+}
+
+.row-three .width .text{
+    width: 50%;
+    color: white;
+}
+
+.row-three .width .text .cursive{
+    font-style: italic;
+}
+.row-three .width .text .bt-txt{
+    font-size: 15px;
+}
+
+.row-three .width .nsikan{
+    height: 70vh;
+    width: 40%;
+}
+.row-three .width .nsikan img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* row four */
+
+.row-four{
+    background-image: url(./assets/images/picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.row-four .width{
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    font-family: sans-serif;
+}
+
+.row-four .width h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 2px 3px #111;
+}
+
+.row-four .width .tmt-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.row-four .width .tmt-wrap .testimonials{
+    background-color: #11111194;
+    width: 32%;
+    padding: 15px;
+    text-align: left;
+}
+
+.row-four .width .tmt-wrap .testimonials .txt{
+    font-style: italic;
+}
+.row-four .name-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.testimonials .client{
+    width: 70%;
+}
+.testimonials .client p{
+    font-size: 13px;
+}
+
+.testimonials .icon-box{
+    width: 20%;
+}
+.testimonials .icon-box i{
+    font-size: 50px;
+}
+
+/* ROW FIVE */
+
+.row-five{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.row-five .width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.row-five .width .column{
+    width: 48%;
+}
+
+.row-five .width .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-five .width .one .services{
+    width: 48%;
+    margin-top: 1rem;
+}
+.row-five .width .one .services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-five .width .one .services .icon{
+    border: 1px solid blue;
+    width: 15%;
+    height: 5vh;
+}
+.row-five .width .one .services .text{
+    width: 83%;
+}
+
+
+.row-five .width .two h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-five .width .two button{
+    margin-top: 20px;
+}
+
+
+/* row-six */
+.row-six{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.row-six .width{
+    background-image: url(./assets/images/picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+
+.row-six .width h1{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 2px 3px #111;
+}
+
+/* footer */
+footer{
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+footer .width{
+    text-align: center;
+}
+footer .width .footer-wrap{
+    border-bottom: 1px solid rgba(255, 196, 0, 0.904);
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer .width ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+footer .width ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+}
+footer .width ul li a{
+    color: white;
+    transition: 0.3s linear;
+}
+footer .width ul li a:hover{
+    color: rgba(255, 196, 0, 0.904);
+}
+
+footer .width .footer-wrap .social-handle{
+    margin-top: 1rem;
+}
+
+footer .width .footer-wrap .social-handle li{
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    background-color: rgba(255, 196, 0, 0.904);
+    font-size: 22px;
+    border-radius: 10px;
+}
+footer .width .footer-wrap .social-handle li a i{
+    color: black;
+}
+
+footer .width .copyright{
+    padding-bottom: 15px;
+    margin-top: 1rem;
+}
